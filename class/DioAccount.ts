@@ -39,6 +39,10 @@ export abstract class DioAccount {
     console.log(this.balance)
   }
 
+  protected getValidateStatus = (): boolean => {
+    return this.validateStatus()
+  }
+
   private validateStatus = (): boolean => {
     if (this.status) {
       return this.status

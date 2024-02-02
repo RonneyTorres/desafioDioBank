@@ -36,7 +36,7 @@ export abstract class DioAccount {
   }
 
   getBalance = (): void => {
-    console.log(this.balance)
+    console.log(`Seu Saldo é de ${this.balance} reais`)
   }
 
   protected getValidateStatus = (): boolean => {

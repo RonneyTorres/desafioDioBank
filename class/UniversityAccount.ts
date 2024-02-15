@@ -8,8 +8,9 @@ export class UniversityAccount extends DioAccount {
 
   deposit = (value: number): void => {
     if(this.getValidateStatus()){
-      this.balance = value + this.balance + 10
+      this.setBalance(value + 10)
       console.log(`Você depositou ${value} reais`)
+      this.getBalance()
     }
   }
 

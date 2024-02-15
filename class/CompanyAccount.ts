@@ -8,8 +8,9 @@ export class CompanyAccount extends DioAccount {
 
   getLoan = (value: number): void => {
     if (this.getValidateStatus()) {
-      this.balance += value
+      this.setBalance(value)
       console.log(`Você pegou um empréstimo no valor de ${value} reais.`)
+      this.getBalance()
     }
   }
 }

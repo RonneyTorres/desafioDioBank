@@ -4,19 +4,21 @@ import { UniversityAccount } from './class/UniversityAccount'
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
 console.log(peopleAccount)
-peopleAccount.deposit(20)
-peopleAccount.withdraw(35)
 peopleAccount.getBalance()
+peopleAccount.deposit(80)
+peopleAccount.withdraw(35)
 
 const companyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
 console.log(companyAccount)
-companyAccount.getLoan(200)
+companyAccount.getBalance()
 companyAccount.deposit(100)
 companyAccount.withdraw(25)
-companyAccount.getBalance()
+companyAccount.getLoan(200)
 
 const universityAccount: UniversityAccount = new UniversityAccount('Aluno', 30)
-universityAccount.deposit(100)
+console.log(universityAccount)
 universityAccount.getBalance()
-universityAccount.deposit(100)
-universityAccount.getBalance()
+universityAccount.deposit(50)
+universityAccount.withdraw(20)
+
+
